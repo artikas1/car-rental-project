@@ -1,6 +1,6 @@
 package com.artiom.car.security;
 
-import com.artiom.car.user.UserRepository;
+import com.artiom.car.user.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

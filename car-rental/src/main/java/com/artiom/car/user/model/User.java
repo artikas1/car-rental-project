@@ -1,4 +1,4 @@
-package com.artiom.car.user;
+package com.artiom.car.user.model;
 import com.artiom.car.role.Role;
 
 import jakarta.persistence.*;
@@ -11,7 +11,6 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.security.Principal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -25,7 +24,7 @@ import java.util.stream.Collectors;
 @Entity
 @Table(name = "users")
 @EntityListeners(AuditingEntityListener.class)
-public abstract class User implements UserDetails, Principal {
+public class User implements UserDetails, Principal {
 
     @Id
     @GeneratedValue
@@ -33,7 +32,6 @@ public abstract class User implements UserDetails, Principal {
     private String firstName;
     private String lastName;
     private String companyName;
-    private LocalDate birthDate;
 
     @Column(unique = true)
     private String email;

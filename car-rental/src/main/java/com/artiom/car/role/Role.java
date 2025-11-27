@@ -1,6 +1,6 @@
 package com.artiom.car.role;
 
-import com.artiom.car.user.User;
+import com.artiom.car.user.model.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;

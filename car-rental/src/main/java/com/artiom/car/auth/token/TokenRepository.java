@@ -1,4 +1,4 @@
-package com.artiom.car.user;
+package com.artiom.car.auth.token;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

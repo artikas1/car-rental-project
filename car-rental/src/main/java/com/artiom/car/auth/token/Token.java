@@ -1,5 +1,6 @@
-package com.artiom.car.user;
+package com.artiom.car.auth.token;
 
+import com.artiom.car.user.model.User;
 import jakarta.persistence.*;
 import lombok.*;
 
